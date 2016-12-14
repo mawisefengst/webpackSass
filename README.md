@@ -1,4 +1,4 @@
-# angular-webpack
+# webpack2-startpoint
 
 Deployed at Heroku: https://svgangularwebpack.herokuapp.com/
 
