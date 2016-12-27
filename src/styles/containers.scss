@@ -1,0 +1,44 @@
+@import "./base.scss";
+
+.container_header{
+	border:none;
+	border-radius: 5px 5px 0 0;
+}
+
+.container_box{
+	background-color:none;
+	border:1px solid #333333;
+}
+
+.container{
+	&.grey_white{
+        .header{
+        	@extend .container_header;
+        	background-color: $font-color-lighter-2;
+        }
+        .box{
+        	@extend .container_box;
+        }
+	}
+
+    &.black_white{
+        .header{
+			@extend .container_header;
+			background-color: $font-color-regular;
+        }
+        .box{
+        	
+        }
+    }
+
+    &.red_white{
+        .header{
+			@extend .container_header;
+			background-color: $button-color-2;
+        }
+        .box{
+        	@extend .container_box;
+        }
+    }
+
+}

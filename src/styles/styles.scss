@@ -1,10 +1,11 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #f1f1f1;
-$font-color: #000000; 
-
+@import "./base.scss";
+@import "./links_buttons.scss";
+@import "./navigations.scss";
+@import "./containers.scss";
+@import "./table.scss";
+@import "./data.scss";
 
 body{
-	
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -16,15 +17,17 @@ body{
 	height: 100vh;
 
 	h1{
-		font-size: 50px;
-		color:$font-color; 
+		@include page-header;
 	}
 
 	div{
 	  &.discription{
-	  	 font-size:16px;
-	  	 color:$font-color; 
+	  	 @include regular-text;
 	  }
+	}
+
+	a{
+		color:$link-color;
 	}
 
 }

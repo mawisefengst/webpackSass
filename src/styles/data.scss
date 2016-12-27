@@ -1,0 +1,31 @@
+$contact_data_color: #0168AB;
+$contact_data_approved_color: #E6F0F7;
+$contact_data_approved_hover_color: #0168AB;
+$attendees_data_color: #319210;
+$attendees_approval_color: #EBF4E8;
+$attendees_approval_hover_color: #EBF4E8;
+$asset_data_color: #333333;
+$system_data_color: #8D0016;
+
+.data_tab{
+	padding:10px 6px;
+	border:none;
+	&.contact{
+		background-color: $contact_data_color;
+		&.approved{
+			background-color: $contact_data_approved_color;
+		}
+	}
+	&.attendees{
+		background-color: $attendees_data_color;
+		&.approved{
+			background-color: $attendees_approval_color;
+		}
+	}
+	&.asset{
+		background-color: $asset_data_color;
+	}
+	&.system{
+		background-color: $system_data_color;
+	}
+}

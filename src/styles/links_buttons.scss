@@ -1,0 +1,62 @@
+@import "base.scss";
+
+.regular-link{
+	@include font-stack;
+	color: $link-color;
+	&:hover{
+		@include hoverState;
+	}
+}
+
+.remove-delete-link{
+	@include font-stack;
+	color: $link-color-important;
+	&:hover{
+		@include hoverState;
+	}
+}
+
+.button{
+	@include font-stack;
+	border-radius:5px;
+	padding:4px 10px;
+}
+
+.primary-button{
+	@extend .button;
+	background-color: $button-color-2;
+	color:$font-color;
+	border:none;
+}
+
+.secondary-button{
+	@extend .button;
+	background-color: $button-color-1;
+	color:$button-color-2;
+	border: 1px solid $border-color;
+}
+
+.disabled-button{
+	@extend .button;
+	background-color: $button-color-1;
+	color:$font-color-lighter-2;
+	border: 1px solid $border-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

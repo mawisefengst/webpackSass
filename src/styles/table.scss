@@ -1,0 +1,23 @@
+.table{
+	.header{
+		background-color: #666666;
+		font-weight: bold;
+		color: $font-color;
+		height: $data-height;
+		line-height: $data-height;
+	}
+
+	.row{
+		color: $font-color-regular;
+		height: $data-height;
+		line-height: $data-height;
+		border:1px solid $border-color; 
+		background-color: $font-color;
+		padding-left: 20px;
+		&.alternative{
+			background-color: $background-color-light;
+		}
+	}
+
+
+}

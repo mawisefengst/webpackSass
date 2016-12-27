@@ -1,0 +1,50 @@
+$font-color-regular:#333333;
+$font-color-lighter:#666666;
+$font-color-lighter-2: #cccccc;
+$font-color:#ffffff;
+$font-color-hightlight: #FF9200;
+$font-color-status:#319210;
+
+$link-color-highlight: #b6e2ff;
+$link-color: #2476A8;
+$link-color-important: #8D0016;
+
+$background-color-light:#f2f2f2;
+$background-color-dark-1: #2476A8;
+$background-color-dark-2: #0168AB;
+
+$button-color: #0168AB;
+$button-color-1: #ffffff;
+$button-color-2: #8D0016;
+
+$icon-color-1: #2476A8;
+$icon-color-2: #0168AB;
+$border-color:#cccccc;
+
+$data-height: 30px;
+
+@mixin font-stack{
+	font-family: verdana;
+	font-size:11px;
+}
+
+@mixin page-header{
+	font-size: 14px;
+	font-weight: bold;
+	color: $font-color-regular;
+}
+
+@mixin regular-text{
+	font-size: 11px;
+	color: $font-color-regular;
+}
+
+@mixin label{
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+}
+
+@mixin hoverState{
+	text-decoration: underline;
+}
