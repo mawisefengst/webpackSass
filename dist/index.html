@@ -5,15 +5,158 @@
 </head>
 <body>
 
-	<h1>Wepack CSS</h1>
+	<div class="site_top_nav">
+        <div class="col">
+        	<img src="images/u502.png" class="statusImg">System Status</div>
+        <div class="col">
+        	<img src="images/u506.png" class="statusImg">Preview Front-End</div>
+        <div class="login">
+        	<img src="images/u508.png" class="statusImg">John Smith(JoSmith) <a href="">Logout</a>
+        </div>
+   </div>
 
-    <a href="http://sportssystems.com">Link</a>
 
-	<div class="discription">
-		Wepack Description   
-	</div>
+   <div class="site_header">
 
-	<script type="text/javascript" src="./bundle.js"></script>
+        <img src="images/logo.png" class="logo">
+
+        <div class="site_header_blue"></div>
+
+        <div id="nav-icon1" class="open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+ 
+
+        <div class="searchField">
+
+            <input type="email" name="email" class="textField">
+
+            <input type="submit" class="btn btn-default" value="Search Appliations">
+
+        </div>
+
+
+        <ul class="nav firstLayer active">
+              
+              <li>
+                <a ng-click="closeNav();" closenav="" href="/#/home" class="ng-binding">Home</a>
+                <ul class="nav" ng-class="{'active':showNestedNav} ">
+                  <li class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/dashboord" class="ng-binding">Dashboord</a>
+                  </li>
+
+                  <li class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/previewtools" class="ng-binding">Preview Tools</a>
+                  </li>
+
+                  <li class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/multi-eventoverview" class="ng-binding">Multi-Event Overview</a>
+                  </li>
+
+                  <li class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/otherevents" class="ng-binding">Other Events</a>
+                  </li>
+                </ul>
+                <div class="arrowDown arrow-down" ng-show="hasChildren" ng-click="showNestList(menu.id);"></div>
+              </li>
+
+              <li ng-repeat="menu in parentMenuList" ng-controller="ItemController" class="ng-scope">
+                <a ng-click="closeNav();" closenav="" href="/#/reports" class="ng-binding">Reports</a>
+                <ul class="nav" ng-class="{'active':showNestedNav} ">
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/allreports" class="ng-binding">All Reports</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/contactreports" class="ng-binding">Contact Reports</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/attendeereports" class="ng-binding">Attendee Reports</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/changereports" class="ng-binding">Change Reports</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/changehistory" class="ng-binding">Change History</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/emailreport" class="ng-binding">Email Report</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/createnewreport" class="ng-binding">Create New Report</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/incomplete" class="ng-binding">Incomplete</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/new" class="ng-binding">New</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/pending" class="ng-binding">Pending</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/complete" class="ng-binding">Complete</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/deleted" class="ng-binding">Deleted</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/customfolders" class="ng-binding">Custom Folders</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/createnewapplication" class="ng-binding">Create New Application</a>
+                  </li>
+                </ul>
+                <div class="arrowDown arrow-down" ng-show="hasChildren" ng-click="showNestList(menu.id);"></div>
+              </li>
+
+              <li ng-repeat="menu in parentMenuList" ng-controller="ItemController" class="ng-scope">
+                <a ng-click="closeNav();" closenav="" href="/#/user" class="ng-binding">User</a>
+              </li>
+
+              <li ng-repeat="menu in parentMenuList" ng-controller="ItemController" class="ng-scope">
+                <a ng-click="closeNav();" closenav="" href="/#/help" class="ng-binding">Help</a>
+                <ul class="nav" ng-class="{'active':showNestedNav} ">
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/support" class="ng-binding">Support</a>
+                  </li>
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/diagnostictool" class="ng-binding">Diagnostic Tool</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/masterlicenseagreement" class="ng-binding">Master License Agreement</a>
+                  </li>
+
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/servicelevelagreement" class="ng-binding">Service Level Agreement</a>
+                  </li>
+                  <li ng-repeat="menuChildren in childrenMenuList" ng-if="menuChildren.parentID == menu.id" my-repeat-directive="" class="ng-scope">
+                    <a ng-click="closeNav();" href="/#/slareport" class="ng-binding">SLA Report</a>
+                  </li>
+                </ul>
+                <div class="arrowDown arrow-down" ng-show="hasChildren" ng-click="showNestList(menu.id);"></div>
+              </li>
+            </ul>
+
+    </div>
+
+    <script type="text/javascript" src="./bundle.js"></script>
 
 </body>
 </html>
