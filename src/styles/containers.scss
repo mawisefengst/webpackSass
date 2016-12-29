@@ -3,14 +3,32 @@
 .container_header{
 	border:none;
 	border-radius: 5px 5px 0 0;
+    padding: 10px;
+    width: 100%;
+    float: left;
+    color: $font-color;  
+    @include font-stack;
+    &.collapsed{border-radius:5px;}
 }
 
 .container_box{
 	background-color:none;
-	border:1px solid #333333;
+	border:1px solid #cccccc;
+    border-top:none;
+    min-height: 300px;
+    padding: 9px;
+    width: 100%;
+    float: left;
+    color: #333333;  
+    @include font-stack;
+    &.collapsed{min-height:0px;}
 }
 
+
 .container{
+    float:left;
+    width: 300px;
+    margin:30px 0 0 30px;
 	&.grey_white{
         .header{
         	@extend .container_header;
@@ -27,7 +45,7 @@
 			background-color: $font-color-regular;
         }
         .box{
-        	
+        	@extend .container_box;
         }
     }
 
