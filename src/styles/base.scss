@@ -23,6 +23,10 @@ $border-color:#cccccc;
 
 $data-height: 30px;
 
+*{
+	box-sizing: border-box;
+}
+
 @mixin font-stack{
 	font-family: verdana;
 	font-size:11px;

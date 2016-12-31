@@ -8,20 +8,31 @@
     float: left;
     color: $font-color;  
     @include font-stack;
-    &.collapsed{border-radius:5px;}
+    cursor: pointer;
+    &.collapsed{
+        border-radius:5px;
+        transition-delay:0.3s;
+    }
 }
 
 .container_box{
 	background-color:none;
 	border:1px solid #cccccc;
     border-top:none;
-    min-height: 300px;
-    padding: 9px;
+    height: 300px;
     width: 100%;
     float: left;
     color: #333333;  
+    padding: 9px;
     @include font-stack;
-    &.collapsed{min-height:0px;}
+    transition: all 0.3s ease-in-out;
+    &.collapsed{
+        max-height:0px; 
+        overflow: hidden;
+        border:none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 
