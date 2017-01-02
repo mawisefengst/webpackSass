@@ -6,6 +6,7 @@ module.exports = {
 		filename: "bundle.js",
 		path: __dirname + "/dist"
 	},
+	performance : {hints : false},
 	module:{
 		rules:[
 			{
