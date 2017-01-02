@@ -22,6 +22,7 @@ module.exports = {
 				  fallbackLoader: 'style-loader',
 				  loader: [
 					  {	loader: 'css-loader'},
+					  {	loader: 'postcss-loader'},
 					  { loader: 'sass-loader' }
 					]
 				})

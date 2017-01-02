@@ -1,27 +1,5 @@
 @import "base.scss";	
-
-.hidden_list{
-	padding:0;
-	opacity: 0;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	visibility: hidden; /* hides sub-menu */
-	transform: translateY(-100%);
-	z-index: -1;
-	transition: all 0.3s ease-in-out 0s, 
-	            visibility 0s linear 0.3s, 
-	            z-index 0s linear 0.01s;
-}
-
-.hidden_list_slidedown{
-  visibility: visible; /* shows sub-menu */
-  opacity: 1;
-  z-index: -1;
-  transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s; 
-}
+@import "animation.scss";
 
 .standard_height{
 	height: $data-height;
