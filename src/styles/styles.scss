@@ -31,5 +31,54 @@ body{
 		color:$link-color;
 	}
 
+
+	#filter_span{
+	    display: inline;
+	    /*background: url("images/filter.png") no-repeat scroll left 0 transparent;*/
+	    background: #000000;
+		width: 166px;
+		height: 21px;
+		float: left;
+	    padding-left: 10px;
+	    cursor: pointer;
+	    padding-top: 3px;
+	     font-size: 12px;
+		    color: white; 
+	}
+	#retrieveCover_list
+	{
+		position: absolute;
+		top:21px;
+		left:0px;
+		display: none;
+		width:100%;
+	}
+	#retrieveCover_list span
+	{
+	   background-color: #6E78A5;
+	    border-bottom: 1px solid #D2D2D2;
+	    color: white;
+	    display: block;
+	    font-size: 12px;
+	    height: 18px;
+	    width: 166px;	
+	    padding-left: 10px;
+	    cursor: pointer;
+	    padding-top: 3px;
+	}
+	#retrieveCover_list span:hover{
+		 background-color: #fff;
+		 color: #6E78A5;
+		}
+	#retrieveCover_list .active{
+		 background-color: #fff;
+		 color: #6E78A5;
+		}
+
+	.dropdown{
+		position:relative;
+	}	
+
+
 }
 
