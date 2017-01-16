@@ -1,12 +1,9 @@
 <html>
 <head>
-	<title>Webpack CSS</title>
+	<title>Webpack CSS SSSI</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-
-
 
 	<div class="site_top_nav">
         <div class="col">
@@ -17,7 +14,6 @@
         	<img src="images/u508.png" class="statusImg">John Smith(JoSmith) <a href="">Logout</a>
         </div>
    </div>
-
 
    <div class="site_header">
 
@@ -161,6 +157,18 @@
 
     </div>
 
+    <div class="container black_white" ng-app="ssLanguageSelector">
+      <div class="header">Angualr Template</div>
+      <div class="box" ng-controller="ssControl">
+          <select ng-model="currentLang" name="currentLang" id="select_currentLang">
+                <option value="0" selected="true">Select your language</option>
+                <option ng-repeat="lang in content" value="{{lang.value}}">{{lang.item}}</option>
+          </select>
+          <ss-language-panel current-content="currentContent"></ss-language-panel>
+      </div>
+    </div> 
+
+    <!--
     <div class="container grey_white">
     	
     	<div class="header">Container Title</div>
@@ -202,6 +210,8 @@
           <span class="">All Covers</span>
         </div>
      </div>
+
+     -->
 
 
     <script type="text/javascript" src="./bundle.js"></script>

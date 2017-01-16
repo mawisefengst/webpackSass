@@ -69,16 +69,21 @@ body{
 	#retrieveCover_list span:hover{
 		 background-color: #fff;
 		 color: #6E78A5;
-		}
+	}
+
 	#retrieveCover_list .active{
 		 background-color: #fff;
 		 color: #6E78A5;
-		}
+	}
 
 	.dropdown{
 		position:relative;
 	}	
 
+	#select_currentLang{
+		font-size:16px;
+		margin-bottom:10px;
+	}
 
 }
 
