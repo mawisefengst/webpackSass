@@ -12,10 +12,12 @@ $link-color-important: #8D0016;
 $background-color-light:#f2f2f2;
 $background-color-dark-1: #2476A8;
 $background-color-dark-2: #0168AB;
+$background-color-default: #b9b9b9;
 
 $button-color: #0168AB;
 $button-color-1: #ffffff;
 $button-color-2: #8D0016;
+$button-color-2-hover: rgba(141,0,22,0.8);
 
 $icon-color-1: #2476A8;
 $icon-color-2: #0168AB;
@@ -23,12 +25,52 @@ $border-color:#cccccc;
 
 $data-height: 30px;
 
+$wide_container_width : 680px;
+$medium_container_width: 480px;
+$small_container_width: 180px;
+
+.wide_container {
+    width: $wide_container_width;
+}
+
+.medium_container {
+    width: $medium_container_width;
+}
+
+.small_container {
+    width: $small_container_width; 
+}
+
+.column{
+    float: left;
+    padding-left:15px;
+    padding-top:15px;
+}
+
+.col-md-6{
+    width:50%;
+}
+
+.noBackground{
+    background:none !important;
+}
+
+.centerContent{
+	max-width: 1280px;
+    margin: 0 auto !important;
+}
+
 *{
 	box-sizing: border-box;
 }
 
 @mixin font-stack{
-	font-family: verdana;
+	font-family: 'Verdana';
+	font-size:11px;
+}
+
+@mixin font-stack-bold{
+	font-family: 'Verdana-Bold', 'Verdana Bold', 'Verdana';
 	font-size:11px;
 }
 

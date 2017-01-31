@@ -20,6 +20,7 @@
 	@include font-stack;
 	border-radius:5px;
 	padding:4px 10px;
+    text-decoration: none !important;
 }
 
 .primary-button{
@@ -27,6 +28,9 @@
 	background-color: $button-color-2;
 	color:$font-color;
 	border:none;
+	&:hover{
+    	background:$button-color-2-hover
+    }
 }
 
 .secondary-button{
@@ -43,6 +47,19 @@
 	border: 1px solid $border-color;
 }
 
+.confirmBtn{
+	width:100%;
+	display:block;
+	background:green;
+	height:30px;
+	color:#ffffff;
+	text-decoration:none !important;
+	line-height:30px;			
+	text-align:center;
+	&:hover{
+		background:rgba(0,128,0,0.8);
+	}
+}
 
 
 

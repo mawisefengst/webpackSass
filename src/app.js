@@ -100,7 +100,7 @@ angular.module("ssLanguageSelector",[require('angular-sanitize')])
 			transclude: true,
 	        templateUrl: './templates/ss-language-panel.html',
 	        link: function(scope, element, attributes){
-	        		debugger;
+	        
 	        }
 		}
 	})
@@ -182,7 +182,6 @@ function initializeGallerySelection($){
 		getInsideDropdown = false;
 		//alert(getInsideWindow);
 	});
-	
 }
 
 

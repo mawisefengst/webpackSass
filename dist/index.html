@@ -5,9 +5,10 @@
 </head>
 <body>
 
+
 	<div class="site_top_nav">
         <div class="col">
-        	<img src="images/u502.png" class="statusImg">System Status</div>
+        	<img src="images/u502.png" class="statusImg">System Statu</div>
         <div class="col">
         	<img src="images/u506.png" class="statusImg">Preview Front-End</div>
         <div class="login">
@@ -15,7 +16,8 @@
         </div>
    </div>
 
-   <div class="site_header">
+
+   <div class="site_header" id="ssMenuBar">
 
         <a href="./">
         	<img src="images/logo.png" class="logo">
@@ -40,10 +42,857 @@
         </div>
 
 
+         <ul id="ss_menu" class="clear">
+        
+        
+          <li class="root" id="menuItem_1">
+            <a href="javascript:void()"> Administration</a>
+            
+            <ul class="showRight">
+               
+                  
+                <li id="menuItem_38" class="">
+                  
+                      <a href="javascript:void(fnLoadAdminPanel())">
+                      <img src="http://secure.sportssystems.dev:8888/images/ilocked.gif"> Administration Homepage </a>
+                    
+                 </li>
+                  
+                <li id="menuItem_38_lineBelow" class="dividerListItem" style="width: 1229px;">&nbsp;</li>
+                     
+                <li id="menuItem_456" class="">
+
+                      <a href="javascript:void(fnLoadIntranet())"> SSSI Intranet </a>
+                    
+                 </li>
+
+                <li id="menuItem_474" class="">
+
+                    <a href="dashboard.cfm"> Internal Dashboard </a>
+                    
+                 </li>
+                  
+            </ul>
+            
+          </li>
+        
+          <li class="root" id="menuItem_2">
+
+              <a href="javascript:void()"> Home </a>
+              
+              <ul class="showRight">
+                 
+                    
+                  <li id="menuItem_450" class="">
+                    
+                        <a href="javascript:void(fnLoadDashboard())"> Dashboard </a>
+                      
+                   </li>
+                    
+                  <li id="menuItem_450_lineBelow" class="dividerListItem" style="width: 1229px;">&nbsp;</li>
+                     
+                    
+                  <li id="menuItem_480" class="">
+                    
+                        <a href="javascript:void(fnOpenWindow('event/formpreview.cfm?eventID=8572&amp;formIndex=1&amp;exemptFromDateRule=1&amp;exemptFromSession=1&amp;editAuth=49221497-DD1D-C671-27106CFEADC36EBF','popup','top=100,left=100,width=1000,height=800,toolbar=no,location=no,scrollbars=yes,resizable=yes'))"> Preview Tools </a>
+                      
+                   </li>
+                    
+                  <li id="menuItem_480_lineBelow" class="dividerListItem" style="width: 1229px;">&nbsp;</li>
+                     
+                    
+                  <li id="menuItem_466" class="">
+                        
+                        <a href="javascript:void(fnLoadMultiEventDashboard())"> Multi-Event Overview </a>
+                      
+                   </li>
+                     
+                  <li id="menuItem_444" class="has_child">
+                        
+                        <a href=""> Other Events </a>
+                        <ul class="otherEvents showRight" >
+                          
+                              <li class="lineBelow" id="menuItem_479">
+                                  <a href="javascript:void(fnLoadUserEventSettings())"> Hide|Show Events </a>
+                              </li>
+                                              
+                              <li id="menuItem_eventID_8572" class=""><a href="index.cfm?selection=Event&amp;SelectedID=8572"> Feng's Test Event (8572)</a></li>
+                            
+                              <li id="menuItem_eventID_8324" class=""><a href="index.cfm?selection=Event&amp;SelectedID=8324"> 16- Hong Kong Racing- TEST (8324)</a></li>
+                            
+                              <li id="menuItem_eventID_8264" class=""><a href="index.cfm?selection=Event&amp;SelectedID=8264"> Model GuestFirst Event (8264)</a></li>
+                            
+                              <li id="menuItem_eventID_8172" class=""><a href="index.cfm?selection=Event&amp;SelectedID=8172"> SportsPro Brand Conference - Sports Systems Presentation (8172)</a></li>
+                            
+                              <li id="menuItem_eventID_7978"><a href="index.cfm?selection=Event&amp;SelectedID=7978"> JL Full Background Test (7978)</a></li>
+                            
+                              <li id="menuItem_eventID_7041" class=""><a href="index.cfm?selection=Event&amp;SelectedID=7041"> RESPONSIVE LEVEL 2 (7041)</a></li>
+                            
+                              <li id="menuItem_eventID_3449"><a href="index.cfm?selection=Event&amp;SelectedID=3449"> SS Email Campaign (3449)</a></li>
+                            
+                              <li id="menuItem_eventID_968"><a href="index.cfm?selection=Event&amp;SelectedID=968"> Pasadena Tournament of Roses 2008 Ticket Application (968)</a></li>
+                            
+                              <li style="background:#cccccc" class=""><strong>Internal Events</strong></li>
+                            
+                              <li id="menuItem_eventID_7885"><a href="index.cfm?selection=Event&amp;SelectedID=7885"> Sports Systems Customer Satisfaction Survey (7885)</a></li>
+                            
+                              <li id="menuItem_eventID_6433"><a href="index.cfm?selection=Event&amp;SelectedID=6433"> Sports Systems Internal Communication (6433)</a></li>
+                            
+                              <li id="menuItem_eventID_6056" class=""><a href="index.cfm?selection=Event&amp;SelectedID=6056"> Sports Systems Presentation Registration (6056)</a></li>
+                            
+                              <li id="menuItem_eventID_1628"><a href="index.cfm?selection=Event&amp;SelectedID=1628"> Program Tracker (1628)</a></li>
+                            
+                              <li style="background:#cccccc"><strong>Test Events</strong></li>
+                            
+                              <li id="menuItem_eventID_5930"><a href="index.cfm?selection=Event&amp;SelectedID=5930"> Mark Cardillo Test Event (5930)</a></li>
+                            
+                              <li id="menuItem_eventID_4485" class=""><a href="index.cfm?selection=Event&amp;SelectedID=4485"> EO Grand Prix + Le Jersey Grand Prix (4485)</a></li>
+                            
+                              <li id="menuItem_eventID_3579"><a href="index.cfm?selection=Event&amp;SelectedID=3579"> 2011 Dynamic Grid Test (3579)</a></li>
+                            
+                              <li id="menuItem_eventID_1028"><a href="index.cfm?selection=Event&amp;SelectedID=1028"> RSVP Test Event (1028)</a></li>
+                            
+                              <li id="menuItem_eventID_960"><a href="index.cfm?selection=Event&amp;SelectedID=960"> Diet Pepsi Super Bowl XLI -- Customer Package Orders (960)</a></li>
+                            
+                              <li id="menuItem_eventID_876" class=""><a href="index.cfm?selection=Event&amp;SelectedID=876"> Survey Test (876)</a></li>
+                            
+                              <li id="menuItem_eventID_870"><a href="index.cfm?selection=Event&amp;SelectedID=870"> Test for Declining Inventory (870)</a></li>
+                            
+                              <li id="menuItem_eventID_547"><a href="index.cfm?selection=Event&amp;SelectedID=547"> Lisa (547)</a></li>
+                            
+                              <li id="menuItem_eventID_525"><a href="index.cfm?selection=Event&amp;SelectedID=525"> testy mctest (525)</a></li>
+                            
+                              <li id="menuItem_eventID_447"><a href="index.cfm?selection=Event&amp;SelectedID=447"> TEST OPENING ROUND -- WOMEN (447)</a></li>
+                            
+                              <li id="menuItem_eventID_446" class=""><a href="index.cfm?selection=Event&amp;SelectedID=446"> TEST OPENING ROUND -- MEN (446)</a></li>
+                            
+                              <li id="menuItem_eventID_438"><a href="index.cfm?selection=Event&amp;SelectedID=438"> 4.3.2 Test Event (438)</a></li>
+                            
+                              <li style="background:#cccccc"><strong>Demos</strong></li>
+                            
+                              <li id="menuItem_eventID_7722"><a href="index.cfm?selection=Event&amp;SelectedID=7722"> GF Template Trello (7722)</a></li>
+                            
+                              <li id="menuItem_eventID_5952"><a href="index.cfm?selection=Event&amp;SelectedID=5952"> Training Test Event (5952)</a></li>
+                            
+                              <li id="menuItem_eventID_5932" class=""><a href="index.cfm?selection=Event&amp;SelectedID=5932"> Dan Truax Test Event (5932)</a></li>
+                            
+                              <li id="menuItem_eventID_5914"><a href="index.cfm?selection=Event&amp;SelectedID=5914"> Sports Systems Season Media Demo (5914)</a></li>
+                            
+                              <li id="menuItem_eventID_3329"><a href="index.cfm?selection=Event&amp;SelectedID=3329"> 2011 Event Demo (3329)</a></li>
+                            
+                              <li id="menuItem_eventID_947"><a href="index.cfm?selection=Event&amp;SelectedID=947"> Sample Hospitality Mgmt System (947)</a></li>
+                            
+                              <li id="menuItem_eventID_937" class=""><a href="index.cfm?selection=Event&amp;SelectedID=937"> Sample Event #3 (937)</a></li>
+                            
+                              <li id="menuItem_eventID_936"><a href="index.cfm?selection=Event&amp;SelectedID=936"> Sample Event 2 - Tribecca (936)</a></li>
+                            
+                              <li id="menuItem_eventID_935"><a href="index.cfm?selection=Event&amp;SelectedID=935"> Sample Event 1 - 2007 (935)</a></li>
+                            
+                              <li id="menuItem_eventID_907"><a href="index.cfm?selection=Event&amp;SelectedID=907"> TicketTracker Demo Event (907)</a></li>
+                            
+                              <li id="menuItem_eventID_883"><a href="index.cfm?selection=Event&amp;SelectedID=883"> Marketing Tool (883)</a></li>
+                            
+                              <li id="menuItem_eventID_674" class=""><a href="index.cfm?selection=Event&amp;SelectedID=674"> Conf. Voting Demo (674)</a></li>
+                            
+                              <li id="menuItem_eventID_625"><a href="index.cfm?selection=Event&amp;SelectedID=625"> LPGA Demo (625)</a></li>
+                            
+                              <li id="menuItem_eventID_425"><a href="index.cfm?selection=Event&amp;SelectedID=425"> Sample Volunteer System (425)</a></li>
+                            
+                              <li id="menuItem_eventID_278"><a href="index.cfm?selection=Event&amp;SelectedID=278"> Guest Pass Sample (278)</a></li>
+                            
+                              <li id="menuItem_eventID_242" class=""><a href="index.cfm?selection=Event&amp;SelectedID=242"> Sports Systems v. 3 Demo (242)</a></li>
+                            
+                              <li id="menuItem_eventID_195"><a href="index.cfm?selection=Event&amp;SelectedID=195"> NCAA Football Demo (195)</a></li>
+                            
+                              <li id="menuItem_eventID_193"><a href="index.cfm?selection=Event&amp;SelectedID=193"> PGA Event Demo (193)</a></li>
+                            
+                              <li style="background:#cccccc"><strong>Dumb Events</strong></li>
+                            
+                              <li id="menuItem_eventID_6524"><a href="index.cfm?selection=Event&amp;SelectedID=6524"> XopheTestEvent6349Clone (6524)</a></li>
+                            
+                              <li id="menuItem_eventID_5931"><a href="index.cfm?selection=Event&amp;SelectedID=5931"> Harrison Small Test Event (5931)</a></li>
+                            
+                              <li id="menuItem_eventID_5817"><a href="index.cfm?selection=Event&amp;SelectedID=5817"> xxxxDon't Use (5817)</a></li>
+                            
+                              <li id="menuItem_eventID_5140"><a href="index.cfm?selection=Event&amp;SelectedID=5140"> MLB Football Don't USE all sports (5140)</a></li>
+                            
+                              <li id="menuItem_eventID_4727"><a href="index.cfm?selection=Event&amp;SelectedID=4727"> HTC Asset Management Site Access - deprecated (4727)</a></li>
+                            
+                              <li id="menuItem_eventID_4543"><a href="index.cfm?selection=Event&amp;SelectedID=4543"> 2012 MLS Cup Don't Use!!!! (4543)</a></li>
+                            
+                              <li id="menuItem_eventID_4371"><a href="index.cfm?selection=Event&amp;SelectedID=4371"> Meghan's test basketball season (4371)</a></li>
+                            
+                              <li id="menuItem_eventID_4221"><a href="index.cfm?selection=Event&amp;SelectedID=4221"> Purge Test 06/06/2012 (4221)</a></li>
+                            
+                              <li id="menuItem_eventID_4101"><a href="index.cfm?selection=Event&amp;SelectedID=4101"> bad copy** (4101)</a></li>
+                            
+                              <li id="menuItem_eventID_4022"><a href="index.cfm?selection=Event&amp;SelectedID=4022"> Toggle Test (COPY OF NCAA Data system) (4022)</a></li>
+                            
+                              <li id="menuItem_eventID_4020"><a href="index.cfm?selection=Event&amp;SelectedID=4020"> xx not used (4020)</a></li>
+                            
+                              <li id="menuItem_eventID_3843"><a href="index.cfm?selection=Event&amp;SelectedID=3843"> BAD 2012 LG NCAA Mens Final Four (3843)</a></li>
+                            
+                              <li id="menuItem_eventID_3842"><a href="index.cfm?selection=Event&amp;SelectedID=3842"> BAD event-2012 LG NCAA Mens Final Four (3842)</a></li>
+                            
+                              <li id="menuItem_eventID_3690"><a href="index.cfm?selection=Event&amp;SelectedID=3690"> dead event 3690 (3690)</a></li>
+                            
+                              <li id="menuItem_eventID_3689"><a href="index.cfm?selection=Event&amp;SelectedID=3689"> bad event 3689 (3689)</a></li>
+                            
+                              <li id="menuItem_eventID_3647"><a href="index.cfm?selection=Event&amp;SelectedID=3647"> PP Test Event-Barb (3647)</a></li>
+                            
+                              <li id="menuItem_eventID_3605"><a href="index.cfm?selection=Event&amp;SelectedID=3605"> xx do not use (3605)</a></li>
+                            
+                              <li id="menuItem_eventID_3604"><a href="index.cfm?selection=Event&amp;SelectedID=3604"> 4.3.0 QA Test Event Create (3604)</a></li>
+                            
+                              <li id="menuItem_eventID_3596"><a href="index.cfm?selection=Event&amp;SelectedID=3596"> Rana's Test Event (3596)</a></li>
+                            
+                              <li id="menuItem_eventID_3551"><a href="index.cfm?selection=Event&amp;SelectedID=3551"> 08/08/2011 Test Copy @ 2:43pm (3551)</a></li>
+                            
+                              <li id="menuItem_eventID_3550"><a href="index.cfm?selection=Event&amp;SelectedID=3550"> 08/08/2011 Test Copy @ 2:40pm (3550)</a></li>
+                            
+                              <li id="menuItem_eventID_3549"><a href="index.cfm?selection=Event&amp;SelectedID=3549"> 08/08/2011 Test Copy @ 2:32pm (3549)</a></li>
+                            
+                              <li id="menuItem_eventID_3498"><a href="index.cfm?selection=Event&amp;SelectedID=3498"> =bad copy RMA (3498)</a></li>
+                            
+                              <li id="menuItem_eventID_3473"><a href="index.cfm?selection=Event&amp;SelectedID=3473"> Eds Test event copy 6-9-2011 (3473)</a></li>
+                            
+                              <li id="menuItem_eventID_3472"><a href="index.cfm?selection=Event&amp;SelectedID=3472"> bad - xxyyzz (3472)</a></li>
+                            
+                              <li id="menuItem_eventID_3471"><a href="index.cfm?selection=Event&amp;SelectedID=3471"> Broken- xxyyzz (3471)</a></li>
+                            
+                              <li id="menuItem_eventID_3420"><a href="index.cfm?selection=Event&amp;SelectedID=3420"> 5-16-11 Copy (3420)</a></li>
+                            
+                              <li id="menuItem_eventID_3419"><a href="index.cfm?selection=Event&amp;SelectedID=3419"> US Open Test Copy 2011 (3419)</a></li>
+                            
+                              <li id="menuItem_eventID_3258"><a href="index.cfm?selection=Event&amp;SelectedID=3258"> bad dupont do not use RMA (3258)</a></li>
+                            
+                              <li id="menuItem_eventID_3226"><a href="index.cfm?selection=Event&amp;SelectedID=3226"> bad event do not use  RMA (3226)</a></li>
+                            
+                              <li id="menuItem_eventID_3215"><a href="index.cfm?selection=Event&amp;SelectedID=3215"> bad event do not use  RMA (3215)</a></li>
+                            
+                              <li id="menuItem_eventID_3205"><a href="index.cfm?selection=Event&amp;SelectedID=3205"> Sports Systems Customer Satisfaction Survey (3205)</a></li>
+                            
+                              <li id="menuItem_eventID_3166"><a href="index.cfm?selection=Event&amp;SelectedID=3166"> MasterCard GRAMMY PMC - killed (3166)</a></li>
+                            
+                              <li id="menuItem_eventID_3136"><a href="index.cfm?selection=Event&amp;SelectedID=3136"> MasterCard SuperBowl Guest Program (3136)</a></li>
+                            
+                              <li id="menuItem_eventID_3057"><a href="index.cfm?selection=Event&amp;SelectedID=3057"> bad dupont copy (3057)</a></li>
+                            
+                              <li id="menuItem_eventID_3014"><a href="index.cfm?selection=Event&amp;SelectedID=3014"> another build test (3014)</a></li>
+                            
+                              <li id="menuItem_eventID_3013"><a href="index.cfm?selection=Event&amp;SelectedID=3013"> testy mctestor (3013)</a></li>
+                            
+                              <li id="menuItem_eventID_2974"><a href="index.cfm?selection=Event&amp;SelectedID=2974"> NASCAR Fuel For Business November (2974)</a></li>
+                            
+                              <li id="menuItem_eventID_2970"><a href="index.cfm?selection=Event&amp;SelectedID=2970"> Sports Systems Guest Pass Demo (2970)</a></li>
+                            
+                              <li id="menuItem_eventID_2960"><a href="index.cfm?selection=Event&amp;SelectedID=2960"> Damco Test Event (2960)</a></li>
+                            
+                              <li id="menuItem_eventID_2945"><a href="index.cfm?selection=Event&amp;SelectedID=2945"> Super Duper Bowl 2010 (fieldnote test) (2945)</a></li>
+                            
+                              <li id="menuItem_eventID_2883"><a href="index.cfm?selection=Event&amp;SelectedID=2883"> Nic's CA Test Event II (2883)</a></li>
+                            
+                              <li id="menuItem_eventID_2877"><a href="index.cfm?selection=Event&amp;SelectedID=2877"> DG Test Event (2877)</a></li>
+                            
+                              <li id="menuItem_eventID_2868"><a href="index.cfm?selection=Event&amp;SelectedID=2868"> Copy Test 07-15-2010 (2868)</a></li>
+                            
+                              <li id="menuItem_eventID_2820"><a href="index.cfm?selection=Event&amp;SelectedID=2820"> Frank :: Voting (2820)</a></li>
+                            
+                              <li id="menuItem_eventID_2776"><a href="index.cfm?selection=Event&amp;SelectedID=2776"> Cory's Test Event (2776)</a></li>
+                            
+                              <li id="menuItem_eventID_2767"><a href="index.cfm?selection=Event&amp;SelectedID=2767"> Nic's Test Event (2767)</a></li>
+                            
+                              <li id="menuItem_eventID_2755"><a href="index.cfm?selection=Event&amp;SelectedID=2755"> Super Duper Bowl &amp; Cookout 2009 (2755)</a></li>
+                            
+                              <li id="menuItem_eventID_2734"><a href="index.cfm?selection=Event&amp;SelectedID=2734"> Open Championship Test (2734)</a></li>
+                            
+                              <li id="menuItem_eventID_2680"><a href="index.cfm?selection=Event&amp;SelectedID=2680"> March 1 2010 Test (2680)</a></li>
+                            
+                              <li id="menuItem_eventID_2630"><a href="index.cfm?selection=Event&amp;SelectedID=2630"> Invitee vs Guest TEST (2630)</a></li>
+                            
+                              <li id="menuItem_eventID_2612"><a href="index.cfm?selection=Event&amp;SelectedID=2612"> unneeded cancel bad event (2612)</a></li>
+                            
+                              <li id="menuItem_eventID_2604"><a href="index.cfm?selection=Event&amp;SelectedID=2604"> bad copy - faulty event 2 (2604)</a></li>
+                            
+                              <li id="menuItem_eventID_2603"><a href="index.cfm?selection=Event&amp;SelectedID=2603"> bad copy - faulty event (2603)</a></li>
+                            
+                              <li id="menuItem_eventID_2553"><a href="index.cfm?selection=Event&amp;SelectedID=2553"> Cirque de Soleil SAP Guest Event (2553)</a></li>
+                            
+                              <li id="menuItem_eventID_2521"><a href="index.cfm?selection=Event&amp;SelectedID=2521"> Contact -n- Attendee [Frank] (2521)</a></li>
+                            
+                              <li id="menuItem_eventID_2468"><a href="index.cfm?selection=Event&amp;SelectedID=2468"> PGA TOUR Corporate Partner Post-Event Questionnaire (2468)</a></li>
+                            
+                              <li id="menuItem_eventID_2447"><a href="index.cfm?selection=Event&amp;SelectedID=2447"> pageSettingINI copy test (2447)</a></li>
+                            
+                              <li id="menuItem_eventID_2417"><a href="index.cfm?selection=Event&amp;SelectedID=2417"> Event Copy (Report Test 4) (2417)</a></li>
+                            
+                              <li id="menuItem_eventID_2416"><a href="index.cfm?selection=Event&amp;SelectedID=2416"> Event Copy (Report Test 3) (2416)</a></li>
+                            
+                              <li id="menuItem_eventID_2415"><a href="index.cfm?selection=Event&amp;SelectedID=2415"> Event Copy (Report Test 2) (2415)</a></li>
+                            
+                              <li id="menuItem_eventID_2414"><a href="index.cfm?selection=Event&amp;SelectedID=2414"> Event Copy (Report Test) (2414)</a></li>
+                            
+                              <li id="menuItem_eventID_2410"><a href="index.cfm?selection=Event&amp;SelectedID=2410"> PGA TOUR Corporate Partner Pre-Event Questionnaire (2410)</a></li>
+                            
+                              <li id="menuItem_eventID_2362"><a href="index.cfm?selection=Event&amp;SelectedID=2362"> sept 20 2 (2362)</a></li>
+                            
+                              <li id="menuItem_eventID_2361"><a href="index.cfm?selection=Event&amp;SelectedID=2361"> Sept 20 (2361)</a></li>
+                            
+                              <li id="menuItem_eventID_2343"><a href="index.cfm?selection=Event&amp;SelectedID=2343"> GuestPass TEST System (2343)</a></li>
+                            
+                              <li id="menuItem_eventID_2249"><a href="index.cfm?selection=Event&amp;SelectedID=2249"> SSSI Test POW System (2249)</a></li>
+                            
+                              <li id="menuItem_eventID_2195"><a href="index.cfm?selection=Event&amp;SelectedID=2195"> tet copy 5-4-09 (2195)</a></li>
+                            
+                              <li id="menuItem_eventID_2183"><a href="index.cfm?selection=Event&amp;SelectedID=2183"> Test Event for Progress Meter (2183)</a></li>
+                            
+                              <li id="menuItem_eventID_2130"><a href="index.cfm?selection=Event&amp;SelectedID=2130"> test again march 27 (2130)</a></li>
+                            
+                              <li id="menuItem_eventID_2129"><a href="index.cfm?selection=Event&amp;SelectedID=2129"> stan's creation test (2129)</a></li>
+                            
+                              <li id="menuItem_eventID_2128"><a href="index.cfm?selection=Event&amp;SelectedID=2128"> Vzw Test Recommendation (2128)</a></li>
+                            
+                              <li id="menuItem_eventID_2115"><a href="index.cfm?selection=Event&amp;SelectedID=2115"> Test Ops Event with Dynamic Grid (2115)</a></li>
+                            
+                              <li id="menuItem_eventID_2111"><a href="index.cfm?selection=Event&amp;SelectedID=2111"> OLD PepsiCo MODEL System (2111)</a></li>
+                            
+                              <li id="menuItem_eventID_2107"><a href="index.cfm?selection=Event&amp;SelectedID=2107"> Contact Only :: Frank TEST (2107)</a></li>
+                            
+                              <li id="menuItem_eventID_2106"><a href="index.cfm?selection=Event&amp;SelectedID=2106"> NCAA Ticket Payment System Test (2106)</a></li>
+                            
+                              <li id="menuItem_eventID_2047"><a href="index.cfm?selection=Event&amp;SelectedID=2047"> Copy Test for Question conditionals 4 (2047)</a></li>
+                            
+                              <li id="menuItem_eventID_2046"><a href="index.cfm?selection=Event&amp;SelectedID=2046"> Copy Test for Question conditionals 3 (2046)</a></li>
+                            
+                              <li id="menuItem_eventID_2045"><a href="index.cfm?selection=Event&amp;SelectedID=2045"> Copy Test for Question conditionals 2 (2045)</a></li>
+                            
+                              <li id="menuItem_eventID_2044"><a href="index.cfm?selection=Event&amp;SelectedID=2044"> Copy Test for Question conditionals (2044)</a></li>
+                            
+                              <li id="menuItem_eventID_2021"><a href="index.cfm?selection=Event&amp;SelectedID=2021"> 2009 Race 2: Las Vegas - BAD, do not use (2021)</a></li>
+                            
+                              <li id="menuItem_eventID_2001"><a href="index.cfm?selection=Event&amp;SelectedID=2001"> Rick Test 01092009 (2001)</a></li>
+                            
+                              <li id="menuItem_eventID_1969"><a href="index.cfm?selection=Event&amp;SelectedID=1969"> Copy of 438 via C4 (1969)</a></li>
+                            
+                              <li id="menuItem_eventID_1968"><a href="index.cfm?selection=Event&amp;SelectedID=1968"> Copy of 438 (1968)</a></li>
+                            
+                              <li id="menuItem_eventID_1881"><a href="index.cfm?selection=Event&amp;SelectedID=1881"> Sara Heath Bat Mitzvah (1881)</a></li>
+                            
+                              <li id="menuItem_eventID_1861"><a href="index.cfm?selection=Event&amp;SelectedID=1861"> Sports Systems - External Link stop example (1861)</a></li>
+                            
+                              <li id="menuItem_eventID_1841"><a href="index.cfm?selection=Event&amp;SelectedID=1841"> SSSI Voting Test System (1841)</a></li>
+                            
+                              <li id="menuItem_eventID_1742"><a href="index.cfm?selection=Event&amp;SelectedID=1742"> Area 32 Contest (1742)</a></li>
+                            
+                              <li id="menuItem_eventID_1699"><a href="index.cfm?selection=Event&amp;SelectedID=1699"> Copy test of 438 #3 (1699)</a></li>
+                            
+                              <li id="menuItem_eventID_1698"><a href="index.cfm?selection=Event&amp;SelectedID=1698"> Copy test 7-31-08 #2 (1698)</a></li>
+                            
+                              <li id="menuItem_eventID_1697"><a href="index.cfm?selection=Event&amp;SelectedID=1697"> Copy test 7-31-08 (438) (1697)</a></li>
+                            
+                              <li id="menuItem_eventID_1693"><a href="index.cfm?selection=Event&amp;SelectedID=1693"> Copy test of 438 #2 (1693)</a></li>
+                            
+                              <li id="menuItem_eventID_1673"><a href="index.cfm?selection=Event&amp;SelectedID=1673"> Test Copy Changes 438-1 (1673)</a></li>
+                            
+                              <li id="menuItem_eventID_1672"><a href="index.cfm?selection=Event&amp;SelectedID=1672"> Copy test of 438 (1672)</a></li>
+                            
+                              <li id="menuItem_eventID_1617"><a href="index.cfm?selection=Event&amp;SelectedID=1617"> Great People Radar (1617)</a></li>
+                            
+                              <li id="menuItem_eventID_1615"><a href="index.cfm?selection=Event&amp;SelectedID=1615"> edits for CA-NOT A Real event (1615)</a></li>
+                            
+                              <li id="menuItem_eventID_1535"><a href="index.cfm?selection=Event&amp;SelectedID=1535"> 2010 CARQUEST Nat'l Business Conference (1535)</a></li>
+                            
+                              <li id="menuItem_eventID_1506"><a href="index.cfm?selection=Event&amp;SelectedID=1506"> stan test of stuff (1506)</a></li>
+                            
+                              <li id="menuItem_eventID_1467"><a href="index.cfm?selection=Event&amp;SelectedID=1467"> 2008 Production Pipeline (1467)</a></li>
+                            
+                              <li id="menuItem_eventID_1438"><a href="index.cfm?selection=Event&amp;SelectedID=1438"> 2008 PressPass Bowl Exit Survey (1438)</a></li>
+                            
+                              <li id="menuItem_eventID_1236"><a href="index.cfm?selection=Event&amp;SelectedID=1236"> Sports Systems 2009-10 Customer Satisfaction Survey (1236)</a></li>
+                            
+                              <li id="menuItem_eventID_1150"><a href="index.cfm?selection=Event&amp;SelectedID=1150"> Sports Systems Volunteer (1150)</a></li>
+                            
+                              <li id="menuItem_eventID_1139"><a href="index.cfm?selection=Event&amp;SelectedID=1139"> Golf Volunteer Demo - David (1139)</a></li>
+                            
+                              <li id="menuItem_eventID_1092"><a href="index.cfm?selection=Event&amp;SelectedID=1092"> Client Project Information Capture (1092)</a></li>
+                            
+                              <li id="menuItem_eventID_1055"><a href="index.cfm?selection=Event&amp;SelectedID=1055"> Sample Hospitality Event #2 (Ticket offerings) (1055)</a></li>
+                            
+                              <li id="menuItem_eventID_1051"><a href="index.cfm?selection=Event&amp;SelectedID=1051"> The Royal Bank of Scotland Hospitality Ticket System (1051)</a></li>
+                            
+                              <li id="menuItem_eventID_967"><a href="index.cfm?selection=Event&amp;SelectedID=967"> Jim's bad for pepsi (967)</a></li>
+                            
+                              <li id="menuItem_eventID_966"><a href="index.cfm?selection=Event&amp;SelectedID=966"> Ed's Test event (966)</a></li>
+                            
+                              <li id="menuItem_eventID_891"><a href="index.cfm?selection=Event&amp;SelectedID=891"> Reverse Calc Test (891)</a></li>
+                            
+                              <li id="menuItem_eventID_890"><a href="index.cfm?selection=Event&amp;SelectedID=890">  (890)</a></li>
+                            
+                              <li id="menuItem_eventID_889"><a href="index.cfm?selection=Event&amp;SelectedID=889"> REVERSE ORDER TEST CALC (889)</a></li>
+                            
+                              <li id="menuItem_eventID_866"><a href="index.cfm?selection=Event&amp;SelectedID=866"> 2007 PressPass Post-Event Questionnaire (866)</a></li>
+                            
+                              <li id="menuItem_eventID_861"><a href="index.cfm?selection=Event&amp;SelectedID=861"> FIVB 2007 Beach Volleyball SWATCH FIVB World Championship (861)</a></li>
+                            
+                              <li id="menuItem_eventID_849"><a href="index.cfm?selection=Event&amp;SelectedID=849"> Johnny Walker F1 Hospitality Guest Information -- AUSTRALIA (849)</a></li>
+                            
+                              <li id="menuItem_eventID_728"><a href="index.cfm?selection=Event&amp;SelectedID=728"> Contact Only Photo Load Test (728)</a></li>
+                            
+                              <li id="menuItem_eventID_663"><a href="index.cfm?selection=Event&amp;SelectedID=663"> Default (663)</a></li>
+                            
+                              <li id="menuItem_eventID_624"><a href="index.cfm?selection=Event&amp;SelectedID=624"> McLaren Partner Demo - Monza 2006 (624)</a></li>
+                            
+                              <li id="menuItem_eventID_599"><a href="index.cfm?selection=Event&amp;SelectedID=599"> College Football Test (599)</a></li>
+                            
+                              <li id="menuItem_eventID_597"><a href="index.cfm?selection=Event&amp;SelectedID=597"> SCCA Sample Vehicle Registration System (597)</a></li>
+                            
+                              <li id="menuItem_eventID_589"><a href="index.cfm?selection=Event&amp;SelectedID=589"> system message copy test (589)</a></li>
+                            
+                              <li id="menuItem_eventID_588"><a href="index.cfm?selection=Event&amp;SelectedID=588"> super tester (588)</a></li>
+                            
+                              <li id="menuItem_eventID_587"><a href="index.cfm?selection=Event&amp;SelectedID=587"> super test (587)</a></li>
+                            
+                              <li id="menuItem_eventID_586"><a href="index.cfm?selection=Event&amp;SelectedID=586"> test 987698764565 (586)</a></li>
+                            
+                              <li id="menuItem_eventID_585"><a href="index.cfm?selection=Event&amp;SelectedID=585"> test 98769876 (585)</a></li>
+                            
+                              <li id="menuItem_eventID_583"><a href="index.cfm?selection=Event&amp;SelectedID=583"> test copy (583)</a></li>
+                            
+                              <li id="menuItem_eventID_565"><a href="index.cfm?selection=Event&amp;SelectedID=565"> Modell's Ticket Request Service (565)</a></li>
+                            
+                              <li id="menuItem_eventID_562"><a href="index.cfm?selection=Event&amp;SelectedID=562"> KPMG Client Ticket Requests (562)</a></li>
+                            
+                              <li id="menuItem_eventID_560"><a href="index.cfm?selection=Event&amp;SelectedID=560"> SNICKERS SBXLIV Email Blast (560)</a></li>
+                            
+                              <li id="menuItem_eventID_559"><a href="index.cfm?selection=Event&amp;SelectedID=559"> SI Ticket Request Manager (559)</a></li>
+                            
+                              <li id="menuItem_eventID_538"><a href="index.cfm?selection=Event&amp;SelectedID=538"> Sharp Ticket Reporting (538)</a></li>
+                            
+                              <li id="menuItem_eventID_527"><a href="index.cfm?selection=Event&amp;SelectedID=527"> Banco Popular Internal Mets Tickets Reporting (527)</a></li>
+                            
+                              <li id="menuItem_eventID_479"><a href="index.cfm?selection=Event&amp;SelectedID=479"> 2006 MLB All Star Game (479)</a></li>
+                            
+                              <li id="menuItem_eventID_443"><a href="index.cfm?selection=Event&amp;SelectedID=443"> BMW Ultimate Drive Registration (443)</a></li>
+                            
+                              <li id="menuItem_eventID_442"><a href="index.cfm?selection=Event&amp;SelectedID=442"> test new create (442)</a></li>
+                            
+                              <li id="menuItem_eventID_441"><a href="index.cfm?selection=Event&amp;SelectedID=441"> testing cwp changes in tool (441)</a></li>
+                            
+                              <li id="menuItem_eventID_440"><a href="index.cfm?selection=Event&amp;SelectedID=440"> tool test2 (440)</a></li>
+                            
+                              <li id="menuItem_eventID_415"><a href="index.cfm?selection=Event&amp;SelectedID=415"> US Open House Seat Online Order Form (415)</a></li>
+                            
+                              <li id="menuItem_eventID_409"><a href="index.cfm?selection=Event&amp;SelectedID=409"> FIVB 2006 World Championships (409)</a></li>
+                            
+                              <li id="menuItem_eventID_407"><a href="index.cfm?selection=Event&amp;SelectedID=407"> 2006 PressPass Post-Event Questionnaire (407)</a></li>
+                            
+                              <li id="menuItem_eventID_382"><a href="index.cfm?selection=Event&amp;SelectedID=382"> Ford '2005 Collision Conquest' Weekend Incentive - Miami (382)</a></li>
+                            
+                              <li id="menuItem_eventID_293"><a href="index.cfm?selection=Event&amp;SelectedID=293"> US Open Ticket Request Service (293)</a></li>
+                            
+                              <li id="menuItem_eventID_285"><a href="index.cfm?selection=Event&amp;SelectedID=285"> Inline Validation Test (285)</a></li>
+                            
+                              <li id="menuItem_eventID_280"><a href="index.cfm?selection=Event&amp;SelectedID=280"> ConAgra Daytona 500 Guest Registration (280)</a></li>
+                            
+                              <li id="menuItem_eventID_223"><a href="index.cfm?selection=Event&amp;SelectedID=223"> NFL Media Credential Demo (223)</a></li>
+                            
+                              <li id="menuItem_eventID_208"><a href="index.cfm?selection=Event&amp;SelectedID=208"> PressPass Post-Event Questionnaire (208)</a></li>
+                            
+                              <li id="menuItem_eventID_150"><a href="index.cfm?selection=Event&amp;SelectedID=150"> NCAA Tournament - Host (150)</a></li>
+                            
+                              <li id="menuItem_eventID_149"><a href="index.cfm?selection=Event&amp;SelectedID=149"> NCAA Tournament - Team (149)</a></li>
+                            
+                              <li id="menuItem_eventID_141"><a href="index.cfm?selection=Event&amp;SelectedID=141"> AAA Football Team Nomination Form (141)</a></li>
+                            
+                              <li id="menuItem_eventID_138"><a href="index.cfm?selection=Event&amp;SelectedID=138"> Media Interview Requests (138)</a></li>
+        
+                        </ul>
+                        
+                   </li>
+                    
+                   <li id="menuItem_479_lineBelow" class="dividerListItem" style="width: 1229px;">&nbsp;</li>
+                     
+                  <!--  
+                  <li id="menuItem_481"></li>
+                     
+                    
+                  <li id="menuItem_483"></li>
+                  -->
+                     
+                    
+                  <li id="menuItem_8" class="has_child">
+                    
+                        <a href="javascript:void()"> Configuration Tools </a>
+                        <ul class="showRight" >
+                          
+                              <li id="menuItem_489">
+                                <a href="javascript:void( fnLoadEventConfigure() )"> Event Config </a>
+                              </li>
+                            
+                              <li id="menuItem_487">
+                                <a href="javascript:void(fnOpenWindow('/control3/Event/assets/tools/viewConfig.cfm?eventID=8572','AssetToolConfig','top=100,left=100,width=800,height=550,toolbar=no,location=no,scrollbars=yes'))"> Asset Tool Config </a>
+                              </li>
+                            
+                              <li id="menuItem_488">
+                                <a href="javascript:void(fnOpenWindow('/control3/Event/assets/tools/editEventAttribs.cfm?eventID=8572','AssetAttribConfig','top=100,left=100,width=800,height=550,toolbar=no,location=no,scrollbars=yes'))"> Asset Attributes </a>
+                              </li>
+                            
+                              <li id="menuItem_486">
+                                <a href="javascript:void(fnOpenWindow('/control3/event/checkinConfig.cfm','checkinConfigTool','top=100,left=100,width=800,height=550,toolbar=no,location=no,scrollbars=yes'))"> Check-in Tool Config </a>
+                              </li>
+                            
+                        </ul>
+                      
+                   </li>
+                     
+                    
+                  <li id="menuItem_473">
+                  
+                        <a href="javascript:fnOpenFormOverview()"> Form Overview Editor/Preview </a>
+                      
+                   </li>
+                    
+              </ul>
+            
+          </li>
+        
+          <li class="root" id="menuItem_5">
+
+              <a href="javascript:void()"> Reports </a>
+              
+              <ul class="showRight" >
+                 
+                    
+                  <li id="menuItem_13">
+                    
+                  
+                    
+                        
+                        <a href="javascript:void(fnLoadAllReports())"> Manage All Reports </a>
+                      
+                   </li>
+                    
+                      <li id="menuItem_13_lineBelow" class="dividerListItem" style="width: 1229px;">&nbsp;</li>
+                     
+                    
+                  <li id="menuItem_35" class="has_child">
+                    
+                  
+                    
+                          <a href="javascript:void()"> Contact Reports </a>
+                        
+                          <ul class="reports showRight" >
+                            
+                              <li class=""><a href="#" class="linkWithImage"><img src="http://secure.sportssystems.dev:8888/control3/images/menu/menu-folder.png"> TEST </a>
+                                
+                              </li>
+                            
+                                    <li id="menuItem_report_207501" class=""><a href="#" onclick="fnLoadReport(207501,'All Contacts - Test')">All Contacts - Test</a></li>
+                                  
+                                    <li id="menuItem_report_207496" class=""><a href="#" onclick="fnLoadReport(207496,'And Again')">And Again</a></li>
+                                  
+                                    <li id="menuItem_report_207504"><a href="#" onclick="fnLoadReport(207504,'Edited via ManageAll')">Edited via ManageAll</a></li>
+                                  
+                                    <li id="menuItem_report_207505"><a href="#" onclick="fnLoadReport(207505,'frank hears about it')">frank hears about it</a></li>
+                                  
+                                    <li id="menuItem_report_207509" class=""><a href="#" onclick="fnLoadReport(207509,'Incomplete Apps')">Incomplete Apps</a></li>
+                                  
+                                    <li id="menuItem_report_207491"><a href="#" onclick="fnLoadReport(207491,'Only Contact Report')">Only Contact Report</a></li>
+                                  
+                                    <li id="menuItem_report_207502"><a href="#" onclick="fnLoadReport(207502,'stressbox')">stressbox</a></li>
+                                  
+                                    <li id="menuItem_report_207503"><a href="#" onclick="fnLoadReport(207503,'Super Pants')">Super Pants</a></li>
+                                  
+                                    <li id="menuItem_report_207495"><a href="#" onclick="fnLoadReport(207495,'Tested New Creation Menu')">Tested New Creation Menu</a></li>
+                                  
+                          </ul>
+                        
+                   </li>
+                     
+                    
+                  <li id="menuItem_36" class="has_child">
+                    
+                  
+                    
+                          <a href="javascript:void()"> Attendee Reports </a>
+                        
+                          <ul class="reports showRight">
+                            
+                              <li class="has_child"><a href="#" class="linkWithImage"><img src="http://secure.sportssystems.dev:8888/control3/images/menu/menu-folder.png"> Folder 5 </a>
+                                
+                                  <ul class="showRight" >
+                                    
+                                      <li id="menuItem_report_207500"><a href="#" onclick="fnLoadReport(207500,'Report Test 10-26-06')">Report Test 10-26-06</a></li>
+                                     
+                                  </ul>
+                                
+                              </li>
+                            
+                                    <li id="menuItem_report_207506"><a href="#" onclick="fnLoadReport(207506,'All Attendees')">All Attendees</a></li>
+                                  
+                                    <li id="menuItem_report_207512" class=""><a href="#" onclick="fnLoadReport(207512,'All Attendees where email contains Frank')">All Attendees where email contains Frank</a></li>
+                                  
+                                    <li id="menuItem_report_207511"><a href="#" onclick="fnLoadReport(207511,'Colors')">Colors</a></li>
+                                  
+                                    <li id="menuItem_report_207510"><a href="#" onclick="fnLoadReport(207510,'DEV - multi lang subjects test')">DEV - multi lang subjects test</a></li>
+                                  
+                                    <li id="menuItem_report_207492"><a href="#" onclick="fnLoadReport(207492,'Editable Test')">Editable Test</a></li>
+                                  
+                                    <li id="menuItem_report_207515"><a href="#" onclick="fnLoadReport(207515,'Image Path test edit')">Image Path test edit</a></li>
+                                  
+                                    <li id="menuItem_report_207508"><a href="#" onclick="fnLoadReport(207508,'Images - edited 2015-12-02')">Images - edited 2015-12-02</a></li>
+                                  
+                                    <li id="menuItem_report_207499"><a href="#" onclick="fnLoadReport(207499,'New Create TEst')">New Create TEst</a></li>
+                                  
+                                    <li id="menuItem_report_207493"><a href="#" onclick="fnLoadReport(207493,'Parking Pass [Editable]')">Parking Pass [Editable]</a></li>
+                                  
+                                    <li id="menuItem_report_207513"><a href="#" onclick="fnLoadReport(207513,'Push Notification tests 2015-10-01')">Push Notification tests 2015-10-01</a></li>
+                                  
+                                    <li id="menuItem_report_207516"><a href="#" onclick="fnLoadReport(207516,'Report Save As [1F5D7]')">Report Save As [1F5D7]</a></li>
+                                  
+                                    <li id="menuItem_report_207497"><a href="#" onclick="fnLoadReport(207497,'Report Save As [88F2D]')">Report Save As [88F2D]</a></li>
+                                  
+                                    <li id="menuItem_report_207498"><a href="#" onclick="fnLoadReport(207498,'Report Save As [88F69]')">Report Save As [88F69]</a></li>
+                                  
+                                    <li id="menuItem_report_207494" class=""><a href="#" onclick="fnLoadReport(207494,'Requesting Press Box')">Requesting Press Box</a></li>
+                                  
+                                    <li id="menuItem_report_207514"><a href="#" onclick="fnLoadReport(207514,'SMS Test')">SMS Test</a></li>
+                                  
+                          </ul>
+                        
+                   </li>
+                     
+                    
+                  <li id="menuItem_37" class="has_child">
+                    
+                  
+                    
+                          <a href="javascript:void()"> System Reports </a>
+                        
+                          <ul class="reports showRight" >
+                            
+                                    <li id="menuItem_report_207507"><a href="#" onclick="fnLoadReport(207507,'Incomplete Applications')">Incomplete Applications</a></li>
+                                  
+                          </ul>
+                        
+                   </li>
+                    
+                      <li id="menuItem_report_207507_lineBelow" class="dividerListItem" style="width: 1229px;">&nbsp;</li>
+                     
+                     <!--
+                    
+                      <li id="menuItem_469"></li>
+                         
+                        
+                      <li id="menuItem_470"></li>
+
+                      -->
+                     
+                    
+                  <li id="menuItem_441" class="">
+                        
+                        <a href="javascript:void(fnLoadAllUserChanges())"> Change History </a>
+                      
+                   </li>
+                     
+                    
+                  <li id="menuItem_455">
+                    
+                  
+                    
+                        
+                        <a href="javascript:void(fnLoadPopUp('emailReport'))"> Email Report </a>
+                      
+                   </li>
+                    
+              </ul>
+            
+          </li>
+        
+          <li class="root" id="menuItem_4">
+            
+            <a href="javascript:void()"> Applications </a>
+            
+            <ul class="showRight" >
+               
+                  
+                <li id="menuItem_477" class="">
+                  
+                
+                  <a href="javascript:void(fnLoadApplicationPanel('Incomplete'))"><img src="http://secure.sportssystems.dev:8888/images/folder.gif"> Incomplete (<span id="queryCount_Incomplete">0</span>)</a><input type="hidden" id="custom_folder_label_Incomplete" value="Incomplete"> 
+                 </li>
+                   
+                  
+                <li id="menuItem_25">
+                  
+                
+                  <a href="javascript:void(fnLoadApplicationPanel('New'))"><img src="http://secure.sportssystems.dev:8888/images/folder.gif"> New (<span id="queryCount_New">0</span>)</a><input type="hidden" id="custom_folder_label_New" value="New"> 
+                 </li>
+                   
+                  
+                <li id="menuItem_26">
+                  
+                
+                  <a href="javascript:void(fnLoadApplicationPanel('Pending'))"><img src="http://secure.sportssystems.dev:8888/images/folder.gif"> Pending (<span id="queryCount_Pending">0</span>)</a><input type="hidden" id="custom_folder_label_Pending" value="Pending"> 
+                 </li>
+                   
+                  
+                <li id="menuItem_27">
+                  
+                
+                  <a href="javascript:void(fnLoadApplicationPanel('Complete'))"><img src="http://secure.sportssystems.dev:8888/images/folder.gif"> Complete (<span id="queryCount_Complete">0</span>)</a><input type="hidden" id="custom_folder_label_Complete" value="Complete"> 
+                 </li>
+                   
+                  
+                <li id="menuItem_28">
+                  
+                
+                  <a href="javascript:void(fnLoadApplicationPanel('Deleted'))"><img src="http://secure.sportssystems.dev:8888/images/folder.gif"> Deleted (<span id="queryCount_Deleted">0</span>)</a><input type="hidden" id="custom_folder_label_Deleted" value="Deleted"> 
+                 </li>
+                  
+                    <li id="menuItem_28_lineBelow" class="dividerListItem" style="width: 1229px;">&nbsp;</li>
+                   
+                  
+                <li id="menuItem_445" class="has_child">
+                  
+                
+                  
+                        <a href="javascript:void()"><img src="http://secure.sportssystems.dev:8888/images/folder.gif"> Custom Folders </a>
+                      
+                        <ul class="reports showRight" >
+                          
+                                  <li id="menuItem_reportAsFolder_207501"><a href="#" onclick="fnLoadApplicationPanel('All%20Contacts%20%2D%20Test',0,0,207501)">All Contacts - Test</a></li>
+                                
+                        </ul>
+                      
+                 </li>
+                  
+                    <li id="menuItem_reportAsFolder_207501_lineBelow" class="dividerListItem" style="width: 1229px;">&nbsp;</li>
+                   
+                  
+                <li id="menuItem_11">
+                  
+                
+                  
+                      
+                      <a href="javascript:void(fnOpenWindow('applications/create_p.cfm?eventKey=929BBF78-3248-42F9-A5F8-D7CE420BD92C&amp;ref=https://secure.sportssystems.com/events2/index.cfm?eventID=8572&amp;isPrivateSession=true&amp;exemptFromDateRule=True','popup','top=100,left=100,width=900,height=600,toolbar=no,location=no,scrollbars=yes,resizable=yes'))"> Create New Application </a>
+                    
+                 </li>
+                   
+                  
+                <li id="menuItem_485">
+                  
+                
+                  
+                      
+                      <a href="javascript:void(fnOpenWindow('/control3/applications/tools/upload/','popup','top=20,left=20,width=950,height=600,toolbar=no,location=no,scrollbars=yes,resizable=yes'))"> Upload Excel Data </a>
+                    
+                 </li>
+                   
+                  
+                <li id="menuItem_10">
+                  
+                
+                  
+                      
+                      <a href="javascript:void(fnLoadOptionsPanel('Options'))"> Screen Display Options </a>
+                    
+                 </li>
+                  
+            </ul>
+            
+          </li>
+        
+          <li class="root" id="menuItem_14">
+            <a href="javascript:void()"> User </a>
+            
+            <ul class="showRight">
+               
+                  
+                <li id="menuItem_16">
+                  
+                
+                  
+                      
+                      <a href="javascript:void(fnLoadOptionsPanel('Preferences'))"> Preferences </a>
+                    
+                 </li>
+                  
+            </ul>
+            
+          </li>
+        
+          <li class="root" id="menuItem_6">
+            <a href="javascript:void()"> Help </a>
+            
+            <ul class="showRight">
+               
+                  
+                <li id="menuItem_19">
+                  
+                
+                  
+                      
+                      <a href="javascript:void(fnLoadOptionsPanel('Support'))"> Support </a>
+                    
+                 </li>
+                   
+                  
+                <li id="menuItem_484">
+                  
+                
+                  
+                      
+                      <a href="javascript:void(fnOpenWindow('/control3/help/diagnosticTest.cfm','popup','top=50,left=100,width=900,height=750,toolbar=no,location=no,scrollbars=yes,resizable=yes'))"> Diagnostic Tool </a>
+                    
+                 </li>
+                   
+                  
+                <li id="menuItem_468">
+                  
+                
+                  
+                      
+                      <a href="javascript:void(fnOpenWindow('http://www.sportssystems.com/clients/credentialing/MLA.pdf','popup','top=100,left=100,width=800,height=900,toolbar=no,location=no,scrollbars=yes,resizable=yes'))"> Master License Agreement </a>
+                    
+                 </li>
+                   
+                  
+                <li id="menuItem_449">
+                  
+                
+                  
+                      
+                      <a href="javascript:void(fnOpenWindow('http://www.sportssystems.com/clients/credentialing/sla.pdf','popup','top=100,left=100,width=800,height=900,toolbar=no,location=no,scrollbars=yes,resizable=yes'))"> Service Level Agreement </a>
+                    
+                 </li>
+                   
+                  
+                <li id="menuItem_442">
+                  
+                
+                  
+                      
+                      <a href="javascript:void(fnOpenWindow('http://www.sportssystems.com/clients/credentialing/slareport.pdf','popup','top=100,left=100,width=800,height=900,toolbar=no,location=no,scrollbars=yes,resizable=yes'))"> SLA Report </a>
+                    
+                 </li>
+                  
+            </ul>
+            
+          </li>
+        
+          <li class="root" id="menuItem_7">
+              <a href="logout.cfm"> Exit </a>
+          </li>
+        
+         </ul>
+
+
+        <!--
         <ul class="nav firstLayer active">
               
               <li>
-                <a ng-click="closeNav();" closenav="" href="/#/home" class="ng-binding">Home</a>
+                <a ng-click="closeNav();" closenav="" href="/#/home" class="ng-binding">Test</a>
                 <ul class="nav" ng-class="{'active':showNestedNav} ">
                   <li class="ng-scope">
                     <a ng-click="closeNav();" href="/#/dashboord" class="ng-binding">Dashboord</a>
@@ -153,22 +1002,886 @@
                 </ul>
                 <div class="arrowDown arrow-down" ng-show="hasChildren" ng-click="showNestList(menu.id);"></div>
               </li>
-            </ul>
+        </ul>
+        -->
 
-    </div>
+   </div>
 
+
+   <div id="contentFrame" class="controlBodyBox">
+      <div id="toolContainer">
+         <div id="dashboardContainer">
+
+
+
+          <div style="position:absolute;top:87px;left:4px;width:674px;">
+      
+                <div class="ypod default-pod" style="width:674px;overflow:auto;overflow-x:auto;overflow-y:auto">
+                <div class="ypod-hd-left default-pod">
+                  <div class="ypod-hd-right default-pod">
+                    <div class="ypod-hd default-pod">
+                      <span class="dashboard-pod-title">
+                        <img src="images/email.png"> Emails Past 48 Hours
+                      </span>
+                      
+                      
+                        <span id="pod_emailHistory" style="float:right">55 ms</span>
+                      
+                     </div>
+                   </div>
+                 </div>
+
+                <div class="ypod-dlg-body default-pod" style="overflow:auto;height:200px;overflow-x:auto;overflow-y:scroll">
+              
+
+                <table cellspacing="0" cellpadding="2" border="0" width="100%" id="history" style="table-layout:fixed;overflow:scroll;">
+                        <tbody><tr class="menuPanelTitleRowAlt">
+                          <th style="width:100px;"></th>
+                          <th style="width:200px;">Recipient</th>
+                          <th style="width:120px">Email Type</th>
+                          <th style="width:110px">Email Sent</th>
+                          <th style="width:55px">Status</th>
+                          
+                        </tr>
+                        </tbody><tbody>
+                          
+                          <tr valign="top">
+                            <td>
+                              <div style="width:100px;overflow:hidden;">
+                              
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonForm_p.cfm?selectedID=1315715&amp;personID=0','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                      
+                                <a class="menuPanelLink" href="javascript:void(fnLoadApplicationPanel('New',1315715,0,0))" title="Jump To Detail View"><img align="absmiddle" src="images/search2.gif" width="16" height="16" alt="Jump To Detail View" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                              
+                              
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=551BD792-2219-31E1-146B70B00C8523A4&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?selectedID=1315715','popup','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="ramiro.cibrian@gmail.com">
+                                  <span id="cf_tooltip_1485367950899">
+                      
+                      ramiro.cibrian@gmail.com
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950900">
+                      
+                      Confirm Email
+                     </span>
+                                </td>
+                                <td style="">
+                                  25/01/2017 3:40 PM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;">
+                                    <span id="cf_tooltip_1485367950901">
+                      
+                      
+                                      <span style="cursor: pointer; text-decoration: underline;">Confirmed</span>
+                                    
+                     </span>
+                                  </td>
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                            <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonForm_p.cfm?selectedID=1315683&amp;personID=0','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                          
+                          <a class="menuPanelLink" href="javascript:void(fnLoadApplicationPanel('New',1315683,0,0))" title="Jump To Detail View"><img align="absmiddle" src="images/search2.gif" width="16" height="16" alt="Jump To Detail View" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=51A701D9-2219-31E1-14C780B9DEBFC5CF&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?selectedID=1315683','popup','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="alimaali17@yahoo.com">
+                                  <span id="cf_tooltip_1485367950902">
+                      
+                      alimaali17@yahoo.com
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950903">
+                      
+                      Confirm Email
+                     </span>
+                                </td>
+                                <td style="">
+                                  25/01/2017 2:01 PM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;">
+                                    <span id="cf_tooltip_1485367950904">
+                      
+                      
+                                      <span style="cursor: pointer; text-decoration: underline;">Confirmed</span>
+                                    
+                     </span>
+                                  </td>
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonFormNFE_p.cfm?uuid=493FC643-2219-8C0B-DD0BB7DD3C7C1D3F','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                          <a sessionid="493FC643-2219-8C0B-DD0BB7DD3C7C1D3F" class="menuPanelLink menuPanelLinkDelete" href="#" onclick="openManageApplicationWindow(0, '', '493FC643-2219-8C0B-DD0BB7DD3C7C1D3F');" title="Delete"><img align="absmiddle" src="images/delete2.gif" width="16" height="16" alt="Delete" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=493FC643-2219-8C0B-DD0BB7DD3C7C1D3F&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?uuid=493FC643-2219-8C0B-DD0BB7DD3C7C1D3F','emailHistory','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="Anya.chernova@gmail.com">
+                                  <span id="cf_tooltip_1485367950905">
+                      
+                      Anya.chernova@gmail.com
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950906">
+                      
+                      Incomplete Warning
+                     </span>
+                                </td>
+                                <td style="">
+                                  25/01/2017 10:25 AM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;">
+                                    <span id="cf_tooltip_1485367950907">
+                      
+                      
+                                      <span style="cursor: pointer; text-decoration: underline;">Confirmed</span>
+                                    
+                     </span>
+                                  </td>
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                            <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonForm_p.cfm?selectedID=1315184&amp;personID=0','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                          
+                          <a class="menuPanelLink" href="javascript:void(fnLoadApplicationPanel('New',1315184,0,0))" title="Jump To Detail View"><img align="absmiddle" src="images/search2.gif" width="16" height="16" alt="Jump To Detail View" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=2ACC674A-2219-8C0B-DDD71B2D995DD8BF&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?selectedID=1315184','popup','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="rbader@albayan.ae">
+                                  <span id="cf_tooltip_1485367950908">
+                      
+                      rbader@albayan.ae
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950909">
+                      
+                      Confirm Email
+                     </span>
+                                </td>
+                                <td style="">
+                                  24/01/2017 7:39 PM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;">
+                                    <span id="cf_tooltip_1485367950910">
+                      
+                      
+                                      <span style="cursor: pointer; text-decoration: underline;">Confirmed</span>
+                                    
+                     </span>
+                                  </td>
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                            <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonForm_p.cfm?selectedID=1314281&amp;personID=0','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                          
+                          <a class="menuPanelLink" href="javascript:void(fnLoadApplicationPanel('New',1314281,0,0))" title="Jump To Detail View"><img align="absmiddle" src="images/search2.gif" width="16" height="16" alt="Jump To Detail View" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=B1428256-2219-31E1-1498C62140620FD4&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?selectedID=1314281','popup','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="info@circleadv.com">
+                                  <span id="cf_tooltip_1485367950911">
+                      
+                      info@circleadv.com
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950912">
+                      
+                      Confirm Email
+                     </span>
+                                </td>
+                                <td style="">
+                                  24/01/2017 5:05 PM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;">
+                                      <div class="confirmBtn">Success</div>
+                                  </td>
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonFormNFE_p.cfm?uuid=1D1362DC-2219-8C0B-DDD6B14C2E97396D','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                          <a sessionid="1D1362DC-2219-8C0B-DDD6B14C2E97396D" class="menuPanelLink menuPanelLinkDelete" href="#" onclick="openManageApplicationWindow(0, '', '1D1362DC-2219-8C0B-DDD6B14C2E97396D');" title="Delete"><img align="absmiddle" src="images/delete2.gif" width="16" height="16" alt="Delete" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=1D1362DC-2219-8C0B-DDD6B14C2E97396D&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?uuid=1D1362DC-2219-8C0B-DDD6B14C2E97396D','emailHistory','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="jturner@thenational.ae">
+                                  <span id="cf_tooltip_1485367950913">
+                      
+                      jturner@thenational.ae
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950914">
+                      
+                      Incomplete Warning
+                     </span>
+                                </td>
+                                <td style="">
+                                  24/01/2017 1:39 PM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;"><div class="confirmBtn">Success</div></td>
+                                
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                            <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonForm_p.cfm?selectedID=1313432&amp;personID=0','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                          
+                          <a class="menuPanelLink" href="javascript:void(fnLoadApplicationPanel('Pending',1313432,0,0))" title="Jump To Detail View"><img align="absmiddle" src="images/search2.gif" width="16" height="16" alt="Jump To Detail View" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=189E9BF5-2219-8C0B-DD1F7F71161D7E4F&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?selectedID=1313432','popup','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="kiran@khaleejtimes.com">
+                                  <span id="cf_tooltip_1485367950915">
+                      
+                      kiran@khaleejtimes.com
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950916">
+                      
+                      Confirm Email
+                     </span>
+                                </td>
+                                <td style="">
+                                  24/01/2017 12:47 PM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;">
+                                    <span id="cf_tooltip_1485367950917">
+                      
+                      
+                                      <span style="cursor: pointer; text-decoration: underline;">Confirmed</span>
+                                    
+                     </span>
+                                  </td>
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                            <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonForm_p.cfm?selectedID=1314281&amp;personID=0','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                          
+                          <a class="menuPanelLink" href="javascript:void(fnLoadApplicationPanel('New',1314281,0,0))" title="Jump To Detail View"><img align="absmiddle" src="images/search2.gif" width="16" height="16" alt="Jump To Detail View" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=B1428256-2219-31E1-1498C62140620FD4&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?selectedID=1314281','popup','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="info@circleadv.com">
+                                  <span id="cf_tooltip_1485367950918">
+                      
+                      info@circleadv.com
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950919">
+                      
+                      Incomplete Warning
+                     </span>
+                                </td>
+                                <td style="">
+                                  24/01/2017 11:32 AM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;"><div class="confirmBtn">Success</div></td>
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                            <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonForm_p.cfm?selectedID=1315022&amp;personID=0','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                          
+                          <a class="menuPanelLink" href="javascript:void(fnLoadApplicationPanel('New',1315022,0,0))" title="Jump To Detail View"><img align="absmiddle" src="images/search2.gif" width="16" height="16" alt="Jump To Detail View" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=1661B7D6-2219-31E1-14E38A8627B22C51&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?selectedID=1315022','popup','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="leslie@khaleejtimes.com">
+                                  <span id="cf_tooltip_1485367950920">
+                      
+                      leslie@khaleejtimes.com
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950921">
+                      
+                      Confirm Email
+                     </span>
+                                </td>
+                                <td style="">
+                                  24/01/2017 10:33 AM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;">
+                                    <span id="cf_tooltip_1485367950922">
+                      
+                      
+                                      <span style="cursor: pointer; text-decoration: underline;">Confirmed</span>
+                                    
+                     </span>
+                                  </td>
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                            <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonForm_p.cfm?selectedID=1313432&amp;personID=0','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                          
+                          <a class="menuPanelLink" href="javascript:void(fnLoadApplicationPanel('Pending',1313432,0,0))" title="Jump To Detail View"><img align="absmiddle" src="images/search2.gif" width="16" height="16" alt="Jump To Detail View" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=189E9BF5-2219-8C0B-DD1F7F71161D7E4F&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?selectedID=1313432','popup','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="kiran@khaleejtimes.com">
+                                  <span id="cf_tooltip_1485367950923">
+                      
+                      kiran@khaleejtimes.com
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950924">
+                      
+                      Duplicate Email Notice
+                     </span>
+                                </td>
+                                <td style="">
+                                  24/01/2017 9:45 AM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;">
+                                    <span id="cf_tooltip_1485367950925">
+                      
+                      
+                                      <span style="cursor: pointer; text-decoration: underline;">Confirmed</span>
+                                    
+                     </span>
+                                  </td>
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                            <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonForm_p.cfm?selectedID=1311702&amp;personID=0','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                          
+                          <a class="menuPanelLink" href="javascript:void(fnLoadApplicationPanel('New',1311702,0,0))" title="Jump To Detail View"><img align="absmiddle" src="images/search2.gif" width="16" height="16" alt="Jump To Detail View" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=162E5DE4-2219-31E1-14836375CDA7FEFD&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?selectedID=1311702','popup','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="patrick.cummings@hkjc.org.hk">
+                                  <span id="cf_tooltip_1485367950926">
+                      
+                      patrick.cummings@hkjc.org.hk
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950927">
+                      
+                      Confirm Email
+                     </span>
+                                </td>
+                                <td style="">
+                                  24/01/2017 9:17 AM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;"><div class="confirmBtn">Success</div></td>
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                            <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonForm_p.cfm?selectedID=1314281&amp;personID=0','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                          
+                          <a class="menuPanelLink" href="javascript:void(fnLoadApplicationPanel('New',1314281,0,0))" title="Jump To Detail View"><img align="absmiddle" src="images/search2.gif" width="16" height="16" alt="Jump To Detail View" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=B1428256-2219-31E1-1498C62140620FD4&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?selectedID=1314281','popup','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="info@circleadv.com">
+                                  <span id="cf_tooltip_1485367950928">
+                      
+                      info@circleadv.com
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950929">
+                      
+                      Incomplete Warning
+                     </span>
+                                </td>
+                                <td style="">
+                                  23/01/2017 12:34 PM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;"><div class="confirmBtn">Success</div></td>
+                                
+                                
+                                
+                              </tr>
+                            
+                              
+                              
+                              
+                              <tr valign="top">
+                                <td>
+                                  <div style="width:100px;overflow:hidden;">
+                                  
+                            <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/editPersonForm_p.cfm?selectedID=1314281&amp;personID=0','editWindow','top=100,left=100,width=900,height=500,toolbar=no,location=no,scrollbars=yes'))" title="View|Edit Details"><img align="absmiddle" src="images/edit2.gif" width="16" height="16" alt="View|Edit Details" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                          
+                          <a class="menuPanelLink" href="javascript:void(fnLoadApplicationPanel('New',1314281,0,0))" title="Jump To Detail View"><img align="absmiddle" src="images/search2.gif" width="16" height="16" alt="Jump To Detail View" border="0" hspace="2" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                        <a class="menuPanelLink" href="javascript:void(fnOpenWindow('applications/create_p.cfm?uuid=B1428256-2219-31E1-1498C62140620FD4&amp;exemptFromDateRule=true','addAttendeee','resizable=yes,top=100,left=100,width=840,height=496,toolbar=no,location=no,scrollbars=yes'))" title="Open User's Perspective"><img align="absmiddle" src="images/ioptimize.gif" width="16" height="16" alt="Open User's Perspective" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                        
+                        
+                          <a class="menuPanelLink" href="javascript:void(fnOpenWindow('reports/views/emailHistory.cfm?selectedID=1314281','popup','top=100,left=100,width=1060,height=500,toolbar=no,location=no,scrollbars=yes'))" title="Email History"><img align="absmiddle" src="images/iindex.gif" width="16" height="16" alt="Email History" hspace="2" border="0" style="margin: 0px 2px;border:0px;height:16px;width:16px;vertical-align:middle;"></a>
+                        
+                                  </div>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;" alt="info@circleadv.com">
+                                  <span id="cf_tooltip_1485367950930">
+                      
+                      info@circleadv.com
+                     </span>
+                                </td>
+                                <td style="overflow:hidden;white-space:nowrap;">
+                                  <span id="cf_tooltip_1485367950931">
+                      
+                      Duplicate Email Notice
+                     </span>
+                                </td>
+                                <td style="">
+                                  23/01/2017 11:20 AM GMT+4 
+                                </td>
+                                
+                                
+                                  <td style="overflow:hidden;white-space:nowrap;"><div class="confirmBtn">Success</div></td>
+                                
+                                
+                                
+                              </tr>
+                            
+                            </tbody>
+                </table>
+              
+                </div>
+                 </div>  
+            
+            
+                 <div id="loadTime_pod_emailHistory" style="display:none;">55 ms</div>
+
+          </div>
+
+
+          <div style="position:absolute;top:87px;left:702px;width:500px;">
+        
+            <div class="ypod default-pod" style="width:500px;overflow:auto;overflow-x:auto;overflow-y:auto">
+              <div class="ypod-hd-left default-pod">
+                <div class="ypod-hd-right default-pod">
+                  <div class="ypod-hd default-pod">
+                    <span class="dashboard-pod-title">
+                      <img src="images/chart_pie.png"> Top 5 Recent Reports
+                    </span>
+                    
+                    
+                      <span id="pod_reportHistory" style="float:right">7 ms</span>
+                    
+                   </div>
+                 </div>
+               </div>
+              <div class="ypod-dlg-body default-pod" style="overflow:auto;height:200px;overflow-x:auto;overflow-y:auto">
+            
+              <table cellspacing="0" cellpadding="2" border="0" width="100%" id="history">
+                <tbody><tr valign="top">
+                  <th>Report</th>
+                  <th>Last viewed</th>
+                  <th></th>
+                </tr>
+                
+                  <tr>
+                    <td>Match Pairings</td>
+                    <td>
+                      
+                      
+                      <span title="date format: dd/mm/yyyy">25/01/2017 4:05 PM</span>
+                    </td>
+                    <td>
+                      
+                      <a href="javascript:void(fnLoadReport(197116,'Match Pairings'))">View</a></td>
+                    
+                  </tr>
+                
+                  <tr>
+                    <td>Client View</td>
+                    <td>
+                      
+                      
+                      <span title="date format: dd/mm/yyyy">11/01/2017 12:04 PM</span>
+                    </td>
+                    <td>
+                      
+                      <a href="javascript:void(fnLoadReport(165778,'Client View'))">View</a></td>
+                    
+                  </tr>
+                
+              </tbody></table>
+             
+              </div>
+            </div>  
+          
+          
+            <div id="loadTime_pod_reportHistory" style="display:none;">7 ms</div>
+
+          </div>
+
+          <div class="small_container" style="position:absolute;top:350px;left:4px;">
+      
+                <div class="ypod default-pod" style="width:170px;overflow:none;overflow-x:auto;overflow-y:auto">
+                  <div class="ypod-hd-left default-pod">
+                    <div class="ypod-hd-right default-pod">
+                      <div class="ypod-hd default-pod">
+                        <span class="dashboard-pod-title">
+                          <img src="images/folder.gif" hspace="4" style="margin: 0px 4px;"> Folders
+                        </span>
+                        
+                        
+                          <span id="pod_folders" style="float:right">1 ms</span>
+                        
+                       </div>
+                     </div>
+                   </div>
+                  <div class="ypod-dlg-body default-pod" style="overflow:none;height:100px;overflow-x:auto;overflow-y:auto">
+                
+              
+              <div class="scrollingWrapper" style="width:100%;height:95px;">
+                
+                  <span style="white-space:nowrap;display:list-item;list-style:none;"><a href="#" onclick="fnLoadApplicationPanel('Incomplete');"><img src="images/folder.gif" hspace="4" align="absmiddle" border="0" style="margin: 0px 4px;border:0px;vertical-align:middle;">Not Used (0)</a></span>
+                
+                  <span style="white-space:nowrap;display:list-item;list-style:none;"><a href="#" onclick="fnLoadApplicationPanel('New');"><img src="images/folder.gif" hspace="4" align="absmiddle" border="0" style="margin: 0px 4px;border:0px;vertical-align:middle;">All Yes/Open (79)</a></span>
+                
+                  <span style="white-space:nowrap;display:list-item;list-style:none;"><a href="#" onclick="fnLoadApplicationPanel('Pending');"><img src="images/folder.gif" hspace="4" align="absmiddle" border="0" style="margin: 0px 4px;border:0px;vertical-align:middle;">Mixed (80)</a></span>
+                
+                  <span style="white-space:nowrap;display:list-item;list-style:none;"><a href="#" onclick="fnLoadApplicationPanel('Complete');"><img src="images/folder.gif" hspace="4" align="absmiddle" border="0" style="margin: 0px 4px;border:0px;vertical-align:middle;">Complete (0)</a></span>
+                
+              </div>
+              
+              <div id="loadTime_pod_folders" style="display:none;">1 ms</div>
+
+              </div>
+              </div>  
+  
+          </div>
+
+
+          <div class="medium_container" style="position:absolute;top:350px;left:250px;">
+      
+            <div class="ypod default-pod" style="overflow:visible;overflow-x:auto;overflow-y:auto">
+              <div class="ypod-hd-left default-pod">
+                <div class="ypod-hd-right default-pod">
+                  <div class="ypod-hd default-pod">
+                    <span class="dashboard-pod-title">
+                      <img src="images/monitor.png" hspace="4" style="margin: 0px 4px;"> Preview
+                    </span>
+                    
+                    
+                      <span id="pod_eventPreview" style="float:right">2307 ms</span>
+                    
+                   </div>
+                 </div>
+               </div>
+              <div class="ypod-dlg-body default-pod" style="overflow:visible;height:251px;overflow-x:auto;overflow-y:auto">
+            
+            <div class="scrollingWrapper" style="height:251px;">
+
+              <div class="column col-md-6">
+
+              <div style="font-weight:bold;">Active Forms</div>
+                <a href="event/formpreview.cfm?editAuth=6A7BB79C-2219-3077-2861CEA7E08E6108&amp;eventID=6877&amp;key=261e3278-d1dc-46c6-8511-73b466cab4e3" target="_new" title="Club Captain Form">Club Captain Fo...</a> 
+                  
+                  <br>
+                <a href="event/formpreview.cfm?editAuth=6A7BB79D-2219-3077-2879AD9612425709&amp;eventID=6877&amp;key=e4a9ba8f-d4be-40fb-80ac-f3ec8d81b930" target="_new" title="Contact Welcome Form">Contact Welcome...</a> 
+                  
+                  <br>
+                <a href="event/formpreview.cfm?editAuth=6A7BB79E-2219-3077-284A40D2818C3CAC&amp;eventID=6877&amp;key=90dd333a-d7fe-4edd-a4e1-4046783e7ac6" target="_new" title="Guest Form">Guest Form</a> 
+                  
+                  <br>
+                <a href="event/formpreview.cfm?editAuth=6A7BB79F-2219-3077-28D9058E7B8E59C0&amp;eventID=6877&amp;key=ef9b618b-8e66-4dd8-9163-d1880e0038df" target="_new" title="Guest Approval Form">Guest Approval...</a> 
+                  
+                  <br>
+                
+              </div>
+              <div class="column col-md-6">
+              <div style="font-weight:bold;">Active Emails</div>
+                
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7A0-2219-3077-2823A0DAB42DD091&amp;eventID=6877&amp;key=AppConfirmLetter" target="_new" title="Confirmation Email">Confirmation Em...</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7A1-2219-3077-282C2FBB0AD9F9E3&amp;eventID=6877&amp;key=reportLetter_164442" target="_new" title="Invitation">Invitation</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7A2-2219-3077-283689BCF7E3AA55&amp;eventID=6877&amp;key=reportLetter_164443" target="_new" title="Chaser Email">Chaser Email</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7A3-2219-3077-289785DD3FAA80D8&amp;eventID=6877&amp;key=reportLetter_164444" target="_new" title="Incomplete Email">Incomplete Emai...</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7A4-2219-3077-28A596BABD47C8FB&amp;eventID=6877&amp;key=reportLetter_164445" target="_new" title="CC #1">CC #1</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7A5-2219-3077-287E4F6518D27C7C&amp;eventID=6877&amp;key=reportLetter_164446" target="_new" title="Pre-Event Email">Pre-Event Email</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7A6-2219-3077-28E44D3A4AC7F1CD&amp;eventID=6877&amp;key=reportLetter_164742" target="_new" title="CC #2">CC #2</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7A7-2219-3077-28A19C27DD1078D1&amp;eventID=6877&amp;key=reportLetter_164743" target="_new" title="CC #3">CC #3</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7A8-2219-3077-28754FA767A13B18&amp;eventID=6877&amp;key=reportLetter_164744" target="_new" title="CC #4">CC #4</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7A9-2219-3077-2822C032D1ABC8F6&amp;eventID=6877&amp;key=reportLetter_166014" target="_new" title="Pre-Event Email-Alarm">Pre-Event Email...</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7AA-2219-3077-28FA700E1EA21E18&amp;eventID=6877&amp;key=reportLetter_178246" target="_new" title="Survey Email">Survey Email</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7AB-2219-3077-28378B4A08A69B7E&amp;eventID=6877&amp;key=reportLetter_197496" target="_new" title="Host Reminder Email">Host Reminder E...</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7AC-2219-3077-28ECFCEFBA608BD9&amp;eventID=6877&amp;key=reportLetter_202824" target="_new" title="TNT Invitation">TNT Invitation</a>
+                  <br> 
+                  <a href="event/formpreview.cfm?editAuth=6A7BB7AD-2219-3077-28F3E460C19BA7FB&amp;eventID=6877&amp;key=DailyEmailToAEs" target="_new" title="Daily AE Email">Daily AE Email</a>
+                  
+              </div>
+            </div>
+
+                  </div>
+                </div>  
+              
+
+            <div id="loadTime_pod_eventPreview" style="display:none;">2307 ms</div>
+              
+          </div>
+
+
+
+           </div><!-- end of dashboardContainer -->
+      </div><!-- end of toolContainer -->
+   </div> <!-- end of controlBodyBox -->
+
+
+
+
+
+
+ <!--
     <div class="container black_white" ng-app="ssLanguageSelector">
-      <div class="header">Angualr Template</div>
+      <div class="header">Language Selector</div>
       <div class="box" ng-controller="ssControl">
           <select ng-model="currentLang" name="currentLang" id="select_currentLang">
                 <option value="0" selected="true">Select your language</option>
-                <option ng-repeat="lang in content" value="{{lang.value}}">{{lang.item}}</option>
+                <option ng-repeat="lang in content" value="{{lang.value}}" ng-bind-html=lang.item></option>
           </select>
-          <ss-language-panel current-content="currentContent"></ss-language-panel>
+          <ss-language-panel current-content="currentContent" 
+          ></ss-language-panel>
       </div>
     </div> 
 
-    <!--
+   
     <div class="container grey_white">
     	
     	<div class="header">Container Title</div>

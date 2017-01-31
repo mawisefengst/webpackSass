@@ -1,14 +1,13 @@
 @import "./base.scss";
 
 .container_header{
+    @include font-stack-bold;
 	border:none;
 	border-radius: 5px 5px 0 0;
-    padding: 10px;
     width: 100%;
-    float: left;
     color: $font-color;  
-    @include font-stack;
     cursor: pointer;
+    padding:8px 10px 8px 5px;
     &.collapsed{
         border-radius:5px;
         transition-delay:0.3s;
@@ -16,6 +15,7 @@
 }
 
 .container_box{
+    @include font-stack;
 	background-color:none;
 	border:1px solid #cccccc;
     border-top:none;
@@ -23,8 +23,7 @@
     width: 100%;
     float: left;
     color: #333333;  
-    padding: 9px;
-    @include font-stack;
+    padding: 1px 0 0 0;
     transition: all 0.3s ease-in-out;
     &.collapsed{
         max-height:0px; 
@@ -36,9 +35,51 @@
 }
 
 
-.container{
-    float:left;
-    width: 300px;
+#dashboardContainer{
+    position:relative;
+    @extend .centerContent;
+    .ypod-hd-left{
+        @extend .container_header;
+        background-color: $font-color-lighter-2;
+        background-image:none;
+        .dashboard-pod-title{
+            @extend .container_header;
+            > img {display:none;}
+        }
+        &.error-pod{
+            background-color: $button-color-2;
+        }
+    }
+    .ypod-dlg-body{
+        padding:5px 0 5px 5px;
+        @extend .container_box;
+        ol{
+            margin: 10px 0 0 0px !important;
+            padding: 0 !important;
+        }
+        .scrollingWrapper{
+            overflow:hidden !important;
+            >div{
+                margin: 0px !important;
+            }
+        }
+        > table{
+            margin: -5px 0 0 -6px;
+        }
+    }
+
+    .ypod{
+        .ypod-hd,.ypod-hd-right{
+            @extend .noBackground;
+        }
+        .ypod-hd{
+            padding:0
+        }
+    }
+
+
+
+    /*float:left;
     margin:30px 0 0 30px;
 	&.grey_white{
         .header{
@@ -68,6 +109,6 @@
         .box{
         	@extend .container_box;
         }
-    }
+    }*/
 
 }
